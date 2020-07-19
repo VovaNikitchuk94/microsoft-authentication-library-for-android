@@ -66,7 +66,15 @@ Add to your app's build.gradle:
 
 ```gradle
 dependencies {
-    implementation 'com.microsoft.identity.client:msal:1.0.+'
+    implementation 'com.microsoft.identity.client:msal:1.5.+'
+}
+```
+
+Please also add the following lines to your repositories section in your gradle script:
+
+```gradle
+maven { 
+    url 'https://pkgs.dev.azure.com/MicrosoftDeviceSDK/DuoSDK-Public/_packaging/Duo-SDK-Feed%40Local/maven/v1' 
 }
 ```
 
